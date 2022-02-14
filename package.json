@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@netlify/plugin-gatsby": "^2.0.2",
     "gatsby": "^4.7.1",
     "gatsby-plugin-gatsby-cloud": "^4.7.0",
     "gatsby-plugin-image": "^2.7.0",
