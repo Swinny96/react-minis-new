@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Header from "./header"
 import "./layout.css"
@@ -26,24 +27,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
+      <Main>{children}</Main>
+      <Footer>
+        <a
+          href="https://www.chrisswinton.co.uk/"
+          target="_blank"
+          rel="noreferrer"
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+          Created by Christopher Swinton
+        </a>
+      </Footer>
     </>
   )
 }
@@ -53,3 +46,10 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+const Main = styled.main``
+
+const Footer = styled.footer`
+  text-align: center;
+  padding: 1em;
+`
