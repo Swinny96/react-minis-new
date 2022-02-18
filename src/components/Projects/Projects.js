@@ -5,9 +5,19 @@ import DesignCode from "./images/DesignCode.svg"
 import BB8 from "./images/BB8.png"
 import TicTacToe from "./images/TicTacToe.png"
 import Calculator from "./images/Calculator.png"
+import Pokemon from "./images/Pokemon.svg"
 
 const Projects = ({ siteTitle }) => (
   <ProjectGroup>
+    <Project
+      title="Poke Deck"
+      text="Poke Deck is a frontend application that connects to a free API called PokeApi, and facilitates the visualization and search of pokemon through a minimalist interface"
+      date="Febuary 2022"
+      link="https://pokedeck.netlify.app/"
+      id="Pokemon"
+      id2="Pokemon2"
+      image={Pokemon}
+    />
     <Project
       title="Calculator"
       text="This a Calculator that I have created in React"

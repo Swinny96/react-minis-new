@@ -71,3 +71,12 @@ a {
 #Calculator2 {
   max-height: 240px;
 }
+
+#Pokemon {
+  background: #fff;
+  border-color: #ED5564;
+}
+
+#Pokemon2 {
+  max-height: 180px;
+}
